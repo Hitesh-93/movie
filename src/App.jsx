@@ -1,10 +1,8 @@
-import './App.css'
 import { fetchDataFromApi } from './utils/api'
 import { useSelector, useDispatch } from 'react-redux'
 import { getApiConfiguration, getGenres } from './store/homeSlice';
 import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
