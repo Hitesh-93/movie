@@ -1,12 +1,9 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-import './Genres.scss'
-
-
+import "./Genres.scss";
 
 const Genres = ({ data }) => {
-
   const { genres } = useSelector((state) => state.home);
 
   return (
@@ -23,4 +20,4 @@ const Genres = ({ data }) => {
   );
 };
 
-export default Genres
+export default Genres;

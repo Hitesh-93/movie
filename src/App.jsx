@@ -64,15 +64,13 @@ function App() {
 
   return (
     <Router>
-      {/* <Header /> */}
+      <Header />
       <Routes>
-        {/* <Route path='/'> */}
         <Route path='/' element={<Home />} />
         <Route path='/:mediaType/:id' element={<Details />} />
         <Route path='/explore/:mediaType' element={<Explore />} />
         <Route path='/search/:query' element={<SearchResult />} />
         <Route path='*' element={<ErrorPage />} />
-        {/* </Route> */}
       </Routes>
       <Footer />
     </Router >
