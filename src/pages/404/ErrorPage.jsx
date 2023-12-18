@@ -1,10 +1,19 @@
 import React from 'react'
 import './ErrorPage.scss'
 
-const ErrorPage = () => {
-    return (
-        <div>ErrorPage</div>
-    )
-}
+import ContentWrapper from "../../components/contentWrapper/ContentWrapper";
 
-export default ErrorPage
+
+
+const PageNotFound = () => {
+    return (
+        <div className="pageNotFound">
+            <ContentWrapper>
+                <span className="bigText">404</span>
+                <span className="smallText">Page not found!</span>
+            </ContentWrapper>
+        </div>
+    );
+};
+
+export default PageNotFound;
